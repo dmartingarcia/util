@@ -16,23 +16,23 @@ exec(open(os.path.join("marrow", "util", "release.py")).read())
 
 setup(
         name = "marrow.util",
-        version = version,
-        
+        version = '1.2.4',
+
         description = "A collection of many commonly reimplemented utility classes and functions.",
         long_description = """\
 For full documentation, see the README.textile file present in the package,
 or view it online on the GitHub project page:
 
 https://github.com/marrow/marrow.util""",
-        
+
         author = "Alice Bevan-McGregor",
         author_email = "alice+marrow@gothcandy.com",
         url = "https://github.com/marrow/marrow.util",
         license = "MIT",
-        
+
         test_suite = 'nose.collector',
         tests_require = ['nose', 'coverage'],
-        
+
         classifiers = [
                 "Development Status :: 5 - Production/Stable",
                 "Environment :: Console",
@@ -48,11 +48,11 @@ https://github.com/marrow/marrow.util""",
                 "Topic :: Software Development :: Libraries :: Python Modules",
                 "Topic :: Utilities"
             ],
-        
+
         packages = find_packages(exclude=['examples', 'tests']),
         zip_safe = True,
         include_package_data = True,
         package_data = {'': ['README.textile', 'LICENSE']},
-        
+
         namespace_packages = ['marrow', 'marrow.util']
     )
